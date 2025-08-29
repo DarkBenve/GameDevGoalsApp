@@ -16,7 +16,24 @@ namespace GameDevGoals
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GameDevGoals());
+
+            while (true)
+            {
+                using (var selector = new ProjectSelectorForm())
+                {
+                    if (selector.ShowDialog() == DialogResult.OK)
+                    {
+                        var goalsForm = new GameDevGoals(selector.SelectedProject);
+                        goalsForm.Show();
+
+                        Application.Run(goalsForm);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
         }
     }
 }

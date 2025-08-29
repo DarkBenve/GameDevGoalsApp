@@ -33,10 +33,10 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.checkedListBoxGoals = new System.Windows.Forms.CheckedListBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelCounters = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnRemoveChecked = new System.Windows.Forms.Button();
             this.btnClearAll = new System.Windows.Forms.Button();
+            this.labelCounters = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +68,7 @@
             this.checkedListBoxGoals.FormattingEnabled = true;
             this.checkedListBoxGoals.Location = new System.Drawing.Point(137, 91);
             this.checkedListBoxGoals.Name = "checkedListBoxGoals";
-            this.checkedListBoxGoals.Size = new System.Drawing.Size(786, 295);
+            this.checkedListBoxGoals.Size = new System.Drawing.Size(786, 284);
             this.checkedListBoxGoals.TabIndex = 2;
             this.checkedListBoxGoals.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxGoals_SelectedIndexChanged);
             // 
@@ -81,17 +81,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1102, 154);
             this.panel1.TabIndex = 3;
-            // 
-            // labelCounters
-            // 
-            this.labelCounters.AccessibleName = "labelCounters";
-            this.labelCounters.AutoSize = true;
-            this.labelCounters.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelCounters.Location = new System.Drawing.Point(0, 0);
-            this.labelCounters.Name = "labelCounters";
-            this.labelCounters.Size = new System.Drawing.Size(82, 14);
-            this.labelCounters.TabIndex = 0;
-            this.labelCounters.Text = "Completati 0/0";
             // 
             // flowLayoutPanel1
             // 
@@ -122,6 +111,17 @@
             this.btnClearAll.TabIndex = 1;
             this.btnClearAll.Text = "Svuota tutto";
             this.btnClearAll.UseVisualStyleBackColor = true;
+            // 
+            // labelCounters
+            // 
+            this.labelCounters.AccessibleName = "labelCounters";
+            this.labelCounters.AutoSize = true;
+            this.labelCounters.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelCounters.Location = new System.Drawing.Point(0, 0);
+            this.labelCounters.Name = "labelCounters";
+            this.labelCounters.Size = new System.Drawing.Size(82, 14);
+            this.labelCounters.TabIndex = 0;
+            this.labelCounters.Text = "Completati 0/0";
             // 
             // GameDevGoals
             // 

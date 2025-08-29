@@ -10,10 +10,12 @@ namespace GameDevGoals
     {
         private readonly string dataDir =
             Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "GoalChecklist");
-        private string DataFile => Path.Combine(dataDir, "goals.json");
+        private string projectName;
+        private string DataFile => Path.Combine(dataDir, $"goals_{projectName}.json");
 
-        public GameDevGoals()
+        public GameDevGoals(string projectName)
         {
+            this.projectName = projectName;
             InitializeComponent();
 
             // Eventi aggiuntivi comodi:
@@ -26,6 +28,9 @@ namespace GameDevGoals
 
             UpdateCounters();
         }
+
+        // Aggiungi anche un costruttore di default per compatibilità
+        public GameDevGoals() : this("Default") { }
 
         // MODEL
         public class GoalItem
